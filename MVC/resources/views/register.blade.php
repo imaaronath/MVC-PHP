@@ -2,7 +2,8 @@
 <head>
     <h1>Buat Account Baru</h1>
     <body>
-        <form action='{{URL::to('/welcome')}}'>
+        <form action='{{url('/welcome')}}' method='post'>
+        @csrf
         <h2>Sign Up Form</h2>
             <label for='fname'>First Name</label>
             <br>
